@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>main.c</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bbb529;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #cc7832;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.c</font>
+</center></td></tr></table>
+<pre><span class="s0">#include </span><span class="s2">&lt;stdio.h&gt;</span>
+<span class="s0">#include </span><span class="s2">&lt;math.h&gt;</span>
+
+<span class="s3">int </span><span class="s1">main()</span>
+<span class="s1">{</span>
+    <span class="s3">int </span><span class="s1">numwalls=</span><span class="s4">0</span><span class="s3">;</span>
+    <span class="s3">int </span><span class="s1">lenwalls=</span><span class="s4">0</span><span class="s3">;</span>
+    <span class="s3">float </span><span class="s1">bricks</span><span class="s3">;</span>
+    <span class="s3">float </span><span class="s1">pallets</span><span class="s3">;</span>
+
+
+
+    <span class="s1">printf(</span><span class="s2">&quot;How many walls does man lyke bob need?</span><span class="s3">\n</span><span class="s2">&quot;</span><span class="s1">)</span><span class="s3">;</span>
+    <span class="s1">scanf(</span><span class="s2">&quot;%d&quot;</span><span class="s3">,</span><span class="s1">&amp;numwalls)</span><span class="s3">;</span>
+    <span class="s1">fflush(stdin)</span><span class="s3">;</span>
+    <span class="s1">printf(</span><span class="s2">&quot;How big are the walls in meters?</span><span class="s3">\n</span><span class="s2">&quot;</span><span class="s1">)</span><span class="s3">;</span>
+    <span class="s1">scanf(</span><span class="s2">&quot;%d&quot;</span><span class="s3">,</span><span class="s1">&amp;lenwalls)</span><span class="s3">;</span>
+    <span class="s1">fflush(stdin)</span><span class="s3">;</span>
+    <span class="s1">bricks = numwalls*lenwalls*</span><span class="s4">1.5</span><span class="s3">;</span>
+    <span class="s1">printf(</span><span class="s2">&quot;Therefore it will take %f bricks to make it</span><span class="s3">\n</span><span class="s2">&quot;</span><span class="s3">,</span><span class="s1">bricks)</span><span class="s3">;</span>
+    <span class="s1">pallets = bricks/</span><span class="s4">100</span><span class="s3">;</span>
+    <span class="s1">printf(</span><span class="s2">&quot;Therefore it will take %f pallets to make it</span><span class="s3">\n</span><span class="s2">&quot;</span><span class="s3">,</span><span class="s1">ceil(pallets))</span><span class="s3">;</span>
+<span class="s1">}</span></pre>
+</body>
+</html>
